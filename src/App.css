@@ -1,38 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  width: 100vw;
   min-height: 100vh;
+  padding-top: 55px;
+}
+
+.app-title-container{
+  padding: 25px;
+  margin-bottom: 15px;
+  display:inline-flex;
+  width:100%;
+  justify-content: space-between;
+}
+
+.lightMode-app-title-container{
+  background-color: #7cc4b4;
+}
+.darkMode-app-title-container{
+  background-color: #444;
+}
+.app-title{
+  font-weight: bold;
+}
+.darkMode-App {
+  background-color: #333;
+  color: #fd9900;
+}
+
+.lightMode-App {
+  background-color: #1fc5b2;
+}
+
+/* .tasks-container {
+  width: 550px;
+  max-width: 65vw;
+  margin: auto;
+  margin-top: 55px;
+  padding: 15px;
+  border-radius: 5px;
+} */
+
+.single-task {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 5px;
+  padding: 5px 15px;
+  background-color: #c7e5ee;
+  border-radius: 3px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-.App-link {
-  color: #61dafb;
+.action-btn {
+  padding: 15px;
+  align-items: center;
+  margin: 0 4px;
+  border: none;
+  border-radius: 3px;
+  font-size: 20px;
+  display: inline-flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task-title {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: left;
 }
+
+.check-sun-btn,
+.check-moon-btn {
+  padding-top: 4.5px;
+  padding-left: 6px;
+}
+
+/*locate the  button in the right side of the app-title-container class*/
+
+
